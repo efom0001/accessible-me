@@ -13,15 +13,19 @@
 </head>
 
 <body>
+  <ul class="skip-links">
+    <li><a href="#nav" role="link">Skip to navigation</a></li>
+    <li><a href="#main" role="link">Skip to main content</a></li>
+  </ul>
   <div class="container">
     <header class="site-header">
       <h1>Jam Box Studios</h1>
-      <nav class="main-nav">
+      <nav class="main-nav" role="navigation">
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Products</a></li>
-          <li><a href="#">Reservation</a></li>
-          <li><a href="#">Studio</a></li>
+          <li><a href="#" role="menuitem">Home</a></li>
+          <li><a href="#" role="menuitem">Products</a></li>
+          <li><a href="#" role="menuitem">Reservation</a></li>
+          <li><a href="#" role="menuitem">Studio</a></li>
         </ul>
       </nav>
       <img src="https://placekitten.com/1200/900" alt="Jam Box Studios Banner" class="banner">
@@ -35,8 +39,8 @@
         <ul>
           <li>Name: John Doe</li>
           <li>Title: CEO</li>
-          <li>Email: johnjoe@jambox.ca</li>
-          <li>Phone: 613-000-0000</li>
+          <li>Email: <a href="mailto:johnjoe@jambox.ca" role="link">johnjoe@jambox.ca</a></li>
+          <li>Phone: <a href="tel:6130000000" role="link">613-000-0000</a></li>
         </ul>
         <h2>Address</h2>
         <address>
@@ -55,7 +59,7 @@
           <input type="text" id="subject" placeholder="Subject">
           <label for="message"><b>Your Message</b></label>
           <textarea id="message"></textarea>
-          <button type="submit">Send</button>
+          <button type="submit" role="button">Send</button>
         </form>
       </section>
     </main>
